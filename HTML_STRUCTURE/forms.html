@@ -1,55 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Forms Example</title>
+<!DOCTYPE html> <!-- Defines the document type as HTML5 -->
 
-<link rel="stylesheet" href="css/styles.css">
+<html lang="en"> <!-- Root element of the webpage. "lang" tells the browser the language -->
+
+<head>
+<meta charset="UTF-8"> <!-- Allows different characters and symbols to display properly -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Makes the page responsive on mobile devices -->
+
+<title>Forms Example</title> <!-- Title shown in the browser tab -->
+
+<link rel="stylesheet" href="forms.css">
+<!-- Links the external CSS file for styling -->
 
 </head>
+
 <body>
 
+<!-- Main container that wraps all content -->
 <div class="container">
 
-<h1>Website Forms Example</h1>
+<h1>Website Forms Example</h1> <!-- Main heading of the page -->
 
-<!-- Search Bar -->
-<div class="search">
+<!-- Search Bar Section -->
+<div class="search"> <!-- Div used to group search input and button -->
+
 <input type="text" placeholder="Search here...">
-<button>Search</button>
+<!-- input creates a field where the user types text -->
+<!-- type="text" means normal text input -->
+<!-- placeholder shows a hint inside the input box -->
+
+<button>Search</button> <!-- Button users click to perform search -->
+
 </div>
 
-<div class="forms">
+<div class="forms"> <!-- Container for multiple forms -->
 
 <!-- Login Form -->
-<div class="card">
-<h2>Login</h2>
-<form>
+<div class="card"> <!-- Div used as a styled box/card -->
 
-<label>Email</label>
+<h2>Login</h2> <!-- Section title -->
+
+<form> <!-- Form collects user input -->
+
+<label>Email</label> <!-- Label describes what the input field is for -->
+
 <input type="email" placeholder="Enter your email">
+<!-- type="email" ensures user enters a valid email format -->
+<!-- placeholder shows instruction text inside the box -->
 
 <label>Password</label>
+
 <input type="password" placeholder="Enter password">
+<!-- type="password" hides characters for security -->
 
 <button type="submit">Login</button>
+<!-- type="submit" sends the form data -->
 
 </form>
 </div>
 
 <!-- Register Form -->
 <div class="card">
+
 <h2>Register</h2>
+
 <form>
 
 <label>Full Name</label>
+
 <input type="text" placeholder="Enter your name">
+<!-- text input used for names -->
 
 <label>Email</label>
+
 <input type="email" placeholder="Enter email">
 
 <label>Password</label>
+
 <input type="password" placeholder="Create password">
 
 <button type="submit">Register</button>
@@ -59,17 +87,23 @@
 
 <!-- Contact Form -->
 <div class="card contact">
+
 <h2>Contact</h2>
+
 <form>
 
 <label>Name</label>
+
 <input type="text" placeholder="Your name">
 
 <label>Email</label>
+
 <input type="email" placeholder="Your email">
 
 <label>Message</label>
+
 <textarea placeholder="Your message"></textarea>
+<!-- textarea allows multi-line text input -->
 
 <button type="submit">Send Message</button>
 
