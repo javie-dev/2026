@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Form</title>
+
+    <!-- Links the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Main container for the form -->
+<div class="form-container">
+
+    <!-- Form title -->
+    <h2>User Registration</h2>
+
+    <!-- Form used to collect user input -->
+    <form>
+
+        <label>Full Name</label>
+        <!-- text input for normal text -->
+        <input type="text" placeholder="Enter your full name">
+
+        <label>Password</label>
+        <!-- password input hides characters -->
+        <input type="password" placeholder="Enter your password">
+
+        <label>Email</label>
+        <!-- email input requires email format -->
+        <input type="email" placeholder="Enter your email">
+
+        <label>Age</label>
+        <!-- number input allows only numbers -->
+        <input type="number" placeholder="Enter your age">
+
+        <label>Birthdate</label>
+        <!-- date picker -->
+        <input type="date">
+
+        <label>Gender</label>
+        <div class="radio-group">
+            <!-- radio buttons allow only one selection -->
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+        </div>
+
+        <label>Hobbies</label>
+        <div class="checkbox-group">
+            <!-- checkboxes allow multiple selections -->
+            <input type="checkbox"> Reading
+            <input type="checkbox"> Gaming
+            <input type="checkbox"> Sports
+        </div>
+
+        <label>Upload File</label>
+        <!-- file input allows file uploads -->
+        <input type="file">
+
+        <!-- submit button sends the form -->
+        <input type="submit" value="Register">
+
+    </form>
+</div>
+
+</body>
+</html>
