@@ -1,0 +1,77 @@
+/* Removes default spacing */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Page background */
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+}
+
+/* Form card container */
+.form-container{
+    background:white;
+    padding:30px;
+    width:350px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Title */
+.form-container h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+/* Labels */
+label{
+    font-weight:bold;
+    display:block;
+    margin-top:10px;
+    margin-bottom:5px;
+}
+
+/* Inputs styling */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="file"]{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    margin-bottom:10px;
+}
+
+/* Radio and checkbox layout */
+.radio-group,
+.checkbox-group{
+    margin-bottom:10px;
+}
+
+/* Submit button styling */
+input[type="submit"]{
+    width:100%;
+    padding:12px;
+    border:none;
+    background:#4facfe;
+    color:white;
+    font-size:16px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+/* Hover effect */
+input[type="submit"]:hover{
+    background:#2f80ed;
+}
