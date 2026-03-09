@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Form with Attributes</title>
+
+    <!-- Links the CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+
+<h2>User Registration</h2>
+
+<!--
+action = where the form data will be sent after submitting
+method = how the data will be sent (GET shows in URL, POST is hidden)
+-->
+<form action="submit.php" method="POST">
+
+<label>Full Name</label>
+
+<!--
+type="text" = allows normal text input
+name="fullname" = identifies this input when data is sent to the server
+placeholder = text shown as a guide inside the input box
+required = user must fill this field before submitting
+-->
+<input type="text" name="fullname" placeholder="Enter your full name" required>
+
+
+<label>Password</label>
+
+<!-- name identifies the password data -->
+<input type="password" name="password" placeholder="Enter your password" required>
+
+
+<label>Email</label>
+
+<!-- email input checks correct email format -->
+<input type="email" name="email" placeholder="Enter your email" required>
+
+
+<label>Age</label>
+
+<!-- number input only allows numbers -->
+<input type="number" name="age" placeholder="Enter your age" required>
+
+
+<label>Birthdate</label>
+
+<!-- date input shows calendar picker -->
+<input type="date" name="birthdate" required>
+
+
+<label>Gender</label>
+
+<!--
+radio buttons share the same name so only one can be selected
+value = the data sent to the server when selected
+-->
+<div class="radio-group">
+<input type="radio" name="gender" value="Male" required> Male
+<input type="radio" name="gender" value="Female"> Female
+</div>
+
+
+<label>Hobbies</label>
+
+<!--
+checkbox allows multiple selections
+value defines what is sent if checked
+-->
+<div class="checkbox-group">
+<input type="checkbox" name="hobby1" value="Reading"> Reading
+<input type="checkbox" name="hobby2" value="Gaming"> Gaming
+<input type="checkbox" name="hobby3" value="Sports"> Sports
+</div>
+
+
+<label>Upload File</label>
+
+<!-- file input allows users to upload files -->
+<input type="file" name="userfile" required>
+
+
+<!--
+submit button sends the form
+value = text displayed on the button
+-->
+<input type="submit" value="Register">
+
+</form>
+
+</div>
+
+</body>
+</html>
